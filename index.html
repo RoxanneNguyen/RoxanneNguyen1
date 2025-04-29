@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roxanne | Nguyễn Minh Hiếu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+      background-size: 300px;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease forwards;
+    }
+    .lang-toggle {
+      cursor: pointer;
+      border: none;
+      background: #222;
+      color: #fff;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .lang-toggle:hover {
+      background: #444;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto 60px;
+      padding: 0 24px;
+      animation: fadeIn 1.2s ease forwards;
+    }
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ccc;
+      display: block;
+      margin: 0 auto;
+      animation: fadeInUp 1s ease forwards;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section {
+      margin-top: 40px;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+    p, ul {
+      font-size: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Roxanne | Nguyễn Minh Hiếu</strong></div>
+    <button class="lang-toggle" onclick="toggleLang()">中文</button>
+  </header>
+
+  <div class="container">
+    <section class="section" id="intro-en">
+      <img src="48ED2FAF-D9FC-4A5C-8E89-8BCE5DB06D28.jpg" alt="Roxanne" class="profile-img">
+      <h1>Hello, I'm Roxanne</h1>
+      <p>Hi, I'm Roxanne (Nguyễn Minh Hiếu) – a pixel perfectionist by day, meme queen by night.<br>
+      With a background in Interactive Design and a brain that never sleeps, I turn chaos into clean layouts and caffeine into creativity ☕🎨.<br>
+      I believe good design should feel like a silent hug — calm, elegant, but unforgettable.<br>
+      If you're looking for someone who can laugh, lead, and launch ideas into action, I'm your girl.<br>
+      Bonus: I can design in 3 languages — English, Mandarin, and... sarcasm 😎.</p>
+    </section>
+
+    <section class="section" id="intro-zh" style="display:none">
+      <img src="48ED2FAF-D9FC-4A5C-8E89-8BCE5DB06D28.jpg" alt="Roxanne" class="profile-img">
+      <h1>你好，我是 Roxanne</h1>
+      <p>哈囉，我是 Roxanne（Nguyễn Minh Hiếu）——白天是完美像素的堅持者，晚上是梗圖女王。<br>
+      擁有互動設計背景和永不停歇的大腦，我能將混亂變成極簡美學，把咖啡轉換成創意靈感 ☕🎨。<br>
+      我相信，好設計就像一個安靜的擁抱 —— 平靜、優雅、但難以忘懷。<br>
+      如果你正在尋找一位會笑、會領導、會把想法變成行動的人，我就是你的人選。<br>
+      加分項：我會三種語言設計——英文、中文和……諷刺幽默 😎。</p>
+    </section>
+
+    <section class="section">
+      <h2 id="skills-title">Skills</h2>
+      <ul id="skills-list">
+        <li>UI/UX Design</li>
+        <li>Prototyping with Figma</li>
+        <li>3D modeling with AI tools</li>
+        <li>Basic HTML/CSS/JS</li>
+        <li>Creative writing & storytelling</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Creative Designer – Freelance</strong> (2023–Now)<br>Branding, UI/UX, and motion design for startup clients</li>
+        <li><strong>Intern – Interactive Design, Taipei Tech</strong> (2022)<br>AR/VR game concept development and prototyping</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Perfume Ad Campaign</strong> – A concept ad for mini perfume bottles targeting African Gen Z users. Role: Art Direction + Editing</li>
+        <li><strong>AR Jump Rope Game</strong> – Developed an IoT-based sport game using Arduino and XR, blending fitness and fun.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>National Taipei University of Technology</strong> – B.A. in Interaction Design (2021–2024)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>OpenAI GPT-4 Prompt Guide</h2>
+      <p>Curious how to talk to AI like a pro? 🧠 Check out the <a href="https://github.com/openai/openai-cookbook/blob/main/docs/gpt-best-practices.md" target="_blank">OpenAI GPT-4 Prompt Guide</a> — your cheat sheet to writing clear, powerful prompts that get magical results ✨.</p>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:roxanne.design@example.com">roxannenguyen5901nguyen5901@gmail.com</a><br>
+      LinkedIn: <a href="https://linkedin.com/in/roxannedesign" target="_blank">linkedin.com/in/roxannenguyen</a></p>
+    </section>
+  </div>
+
+  <script>
+    let lang = 'en';
+    function toggleLang() {
+      lang = (lang === 'en') ? 'zh' : 'en';
+      document.getElementById('intro-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('intro-zh').style.display = lang === 'zh' ? 'block' : 'none';
+      document.querySelector('.lang-toggle').innerText = lang === 'en' ? '中文' : 'EN';
+    }
+  </script>
+</body>
+</html>

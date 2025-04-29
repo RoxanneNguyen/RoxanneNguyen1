@@ -1,0 +1,16 @@
+{
+  "name": "cathay",
+  "version": "1.0.0",
+  "description": "Cathay stuff",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roxanne",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^36.0.0",
+    "save-dev": "^0.0.1-security"
+  }
+}
